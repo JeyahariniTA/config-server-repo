@@ -4,12 +4,6 @@ spring:
     url: jdbc:mysql://localhost:3306/dbtest
     username: root
     password: Root@123#
-  cloud:
-    config:
-      server:
-        git:
-          uri: C:\\Users\\Windows\\Documents\\config-server-repo
-          cloneOnStart: true
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,6 +14,3 @@ server:
   error:
     whitelabel:
       enabled: true
-management:
-  security:
-    enabled:  false
