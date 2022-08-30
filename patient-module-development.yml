@@ -7,7 +7,6 @@ spring:
       server:
         git:
           uri: C:\\Users\\Windows\\Documents\\config-server-repo
-          name: patient-module
           cloneOnStart: true
   jpa:
     hibernate:
