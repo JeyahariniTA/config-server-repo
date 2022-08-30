@@ -2,8 +2,6 @@ msg: welcome to config server
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/dbtest
-    username: ${dbusername}
-    password: ${dbpassword}
   cloud:
     config:
       server:
