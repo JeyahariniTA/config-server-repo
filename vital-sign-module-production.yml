@@ -1,0 +1,27 @@
+msg: welcome to config server
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dbtest
+  cloud:
+    config:
+      server:
+        git:
+          uri: C:\\Users\\Windows\\Documents\\config-server-repo
+          cloneOnStart: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+  cache:
+    type: redis
+    redis:
+      cache-null-values: true
+server:
+  error:
+    whitelabel:
+      enabled: true
+management:
+  security:
+    enabled:  false
